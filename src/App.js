@@ -9,11 +9,9 @@ function App() {
       <header>
         <h1>Shambashib's To Do list:</h1>
       </header>
-      <Form />
+      <Form setInputText={setInputText}/>
       <ToDolist />
-    </div> 
-    
-    
+    </div>     
   );
 };
 
