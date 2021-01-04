@@ -6,7 +6,11 @@ const Form = ({ setInputText }) => {
     const inputTextHandler = (e) => {
         console.log(e.target.value);
         setInputText(e.target.value);
+
     };
+    const submitTodoHandler = (e) => {
+        e.preventDefault();
+    }
     return(
         <form>
             <input onChange={inputTextHandler} type="text" className="todo-input" />

@@ -4,6 +4,7 @@ import Form from './components/Form';
 import ToDolist from './components/ToDolist';
 function App() {
   const [inputText, setInputText] = useState("");
+  const [todos, setTodos] = useState([]);
   return (
     <div className="App">
       <header>
