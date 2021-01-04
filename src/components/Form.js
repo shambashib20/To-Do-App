@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Form = ({ setInputText }) => {
+const Form = ({ setInputText,todos,setTodos }) => {
 
     const inputTextHandler = (e) => {
         console.log(e.target.value);
@@ -10,6 +10,9 @@ const Form = ({ setInputText }) => {
     };
     const submitTodoHandler = (e) => {
         e.preventDefault();
+        setTodos([
+            ...todos
+        ]);
     }
     return(
         <form>
